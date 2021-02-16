@@ -2,17 +2,14 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
+require 'sqlite3'
 
 get '/' do 
-	erb :index		 
+	erb "Добро Пожаловать!"	 
 end
 
 get '/Add' do
-	erb :Add
-end
-
-get '/contacts' do
-	erb :contacts
+	erb :add
 end
 
 post '/' do
